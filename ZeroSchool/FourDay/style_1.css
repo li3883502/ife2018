@@ -1,0 +1,10 @@
+.name{
+    font-weight: bold;
+    margin-right:5px;
+}
+.add-blank{
+    margin-left:30px;
+}
+section:nth-child(3) span,section:nth-child(4) span,section:nth-child(5) span{
+    display: block;
+}
