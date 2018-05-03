@@ -1,0 +1,44 @@
+header{
+    width:100%;
+    background:#999;
+}
+header h1{
+    margin:0px;
+    font-size:20px;
+    color:#fff;
+    padding:20px;
+}
+body{
+    margin:0px;
+}
+main{
+    display:table;
+    border-collapse:collapse;
+    width:100%;
+}
+section{
+    display:table-row;
+    height:150px;
+   
+}
+section div{
+    display:table-cell;
+    border-bottom:2px solid #ddd;
+    padding:0px 20px;
+    
+}
+section h2{
+    display:table-cell;
+    background:#ddd;
+    font-size:16px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom:2px solid #fff;
+}
+.name{
+    font-weight: bold;
+    margin-right:5px;
+}
+.add-blank{
+    margin-left:30px;
+}
