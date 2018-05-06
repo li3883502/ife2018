@@ -1,0 +1,32 @@
+/*不变主体区*/
+body{
+    margin:0px;
+  }
+header,footer,main #left,#right{
+  border:2px solid #999;
+  font-size:14px;
+  background:#eee;
+  text-align:center;
+}
+  header,footer{  /*页眉页脚设置*/
+   background:#999;
+    width:100%;
+    height:40px;
+    box-sizing:border-box;
+  }
+  main{
+      min-width:550px; /*防止浏览器过小布局变性*/
+  }
+  main #left,main #right{
+    height:400px;
+}
+/*flex方案*/
+main{
+    display: flex;
+}
+main #left{
+  width:400px;
+}
+main #right{
+  flex:1 1 auto;
+}
