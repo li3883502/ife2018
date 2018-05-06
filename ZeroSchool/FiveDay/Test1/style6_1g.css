@@ -1,0 +1,35 @@
+/*不变主体区*/
+body{
+    margin:0px;
+  }
+header,footer,main #left,main #right{
+  border:2px solid #999;
+  font-size:14px;
+  background:#eee;
+  text-align:center;
+   box-sizing: border-box; /*改变盒子模式*/
+}
+  header,footer{
+   background:#999;
+    width:100%;
+    height:40px;
+  }
+  main #left,main #right{
+    
+    height:600px;
+  }
+  /*
+   main #right{  
+    width:70%; 
+}*/
+/*float+BFC方案，不需要对right设置宽度*/
+main #left{
+    float:left;
+    width:30%;
+}
+main #right{
+    overflow: auto;
+}
+footer{
+    clear:both;
+}
