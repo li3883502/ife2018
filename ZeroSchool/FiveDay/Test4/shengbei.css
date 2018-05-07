@@ -1,0 +1,47 @@
+/*不变主体区*/
+body{
+    margin:0px;
+  }
+header,footer,main #left,#right,#center{
+  font-size:14px;
+  background:#eee;
+  text-align:center;
+}
+  header,footer{  /*页眉页脚设置*/
+   background:#999;
+    width:100%;
+    height:40px;
+    box-sizing:border-box;
+  }
+main #left,main #right,main #center{
+      height:400px;
+      
+  }
+/*圣杯框架，不应改变框架的padding和margin，border，除非使用border-box*/
+main #center,main #left,main #right{
+  float:left;
+  position:relative;
+}
+main{
+  padding:0px 200px 0px 150px;
+}
+main #center{
+  width:100%;
+}
+main #left{
+  background:#8fafff;
+  color:#fff;
+  width:150px;
+  margin-left:-100%;
+  right:150px;
+}
+main #right{
+  background:#ffaf50;
+  color:#fff;
+  width:200px;
+  margin-right:-200px;
+}
+footer{
+  clear:both;
+}
+
