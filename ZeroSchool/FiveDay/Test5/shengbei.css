@@ -1,0 +1,50 @@
+/*不变主体区*/
+body{
+    margin:0px;
+  }
+header,footer,main #left,#right,#center{
+  font-size:14px;
+  background:#eee;
+  text-align:center;
+}
+  header,footer{  /*页眉页脚设置*/
+   background:#999;
+    width:100%;
+    height:40px;
+    box-sizing:border-box;
+  }
+main #left,main #right,main #center{
+      height:400px;  
+  }
+main #left,main #center{
+  width:200px;
+}
+/*方案*/
+body{
+ min-width:600px;/*因right的width有left的宽度，left才能左移100%进入第一行*/
+}
+main{
+  padding-left:400px;
+}
+main #right{
+  width:100%;
+}
+main #left,main #right,main #center{
+  float:left;
+  position:relative;
+}
+main #left{
+  background:#ffaf50;
+  color:#fff;
+  margin-left:-100%;
+  left:-400px;
+}
+main #center{
+  background:#8fafff;
+  color:#fff;
+  margin-left:-100%;
+  left:-200px;
+}
+footer{
+  clear:both;
+}
