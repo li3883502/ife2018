@@ -1,0 +1,125 @@
+body{
+    margin:0px;
+    font-size:14px;
+  }
+  header{
+    background:#333333;
+     *zoom:1; 
+    width:100%;
+  }
+  header::after{
+    content:".";
+    display:block;
+    visibility:hidden;
+    height:0px;
+    clear:both;
+  }
+  header #h-body{
+    width:960px;
+    margin:0px auto;
+  }
+  header h1,header ul,header ul li{
+    float:left;
+  }
+  header h1{
+    margin:0px;
+    text-indent:-2000px;
+    background:url(01.png) center bottom no-repeat;
+  }
+  header nav{
+    float:right;
+  }
+  header ul li{
+    list-style:none;
+  }
+  header ul li a{
+    text-decoration:none;
+    color:#fff;
+    margin:20px;
+  }
+  
+  /*main部分*/
+  main section #img{
+    position:relative;
+    background:#66bb33;
+    width:100%;
+    height:300px;
+  }
+  main #img nav{
+    position:absolute;
+    right:10%;
+    bottom:10px;
+  }
+  main #img a{
+    display:inline-block;
+    text-decoration:none;
+    color:#666;
+    background:#ffffff88;
+    width:20px;
+    text-align:center;
+    vertical-align:bottom;
+    border:1px solid #666;
+  }
+  main #img a.active{
+    color:#000;
+    padding-top:20px;
+    background:#ffffffda; 
+  }
+  
+  /*ceontent区*/
+  #content nav{
+    width:960px;
+    margin:40px auto 10px auto;
+    font-size:0px;
+  }
+  #content nav a{
+    padding:20px 30px 10px 30px;
+    border:1px solid #ccc;
+    border-bottom:1px solid #999;
+    text-decoration:none;
+    background:#eeeeee;
+    color:#000;
+    font-size:13px;
+    border-radius:20px 20px 0px 0px;
+  }
+  #content nav a.active{
+    border:1px solid #999;
+    border-bottom:1px solid #fff;
+    background:#fff;
+  }
+  /**/
+  #content hr{
+      margin:0px;
+  }
+  #c-body{
+    width:960px;
+    margin:0 auto;
+  }
+  #c-body-H,#c-body-P,#c-body-A{
+    width:960px;
+    background:#fff;
+    display:flex;
+    flex-flow:row wrap;
+  }
+  #c-body-H div,#c-body-P div,#c-body-A div{
+    border:1px solid #999;
+    flex:1;
+    padding:80px;
+    margin:10px 10px 0px 0px;
+  }
+  #c-body-H.active{
+      z-index:1;
+  }
+  #c-body-P,#c-body-A{
+      display: none;
+  }
+
+  /*footer*/
+footer{
+    height:70px;
+    line-height:50px;
+    width:100%;
+    background:#666666;
+    color:#fff;
+    text-align:center;
+}  
