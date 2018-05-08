@@ -1,5 +1,5 @@
 # ife2018
-## 第七天到第八天
+### 第七天到第八天:
 
 1. 实现一个两栏布局，左侧占30%宽度，右侧占70%宽度 [demo]( https://li3883502.github.io/ife2018/ZeroSchool/FiveDay/Test1/test6_1.html)   
 2. 实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化 [demo](  https://li3883502.github.io/ife2018/ZeroSchool/FiveDay/Test2/test6_2.html)
