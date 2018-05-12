@@ -1,0 +1,427 @@
+/*引用字体*/
+@font-face {
+    font-family: Montserrat;
+    src: url('Montserrat-ExtraLight.woff2.ttf'); /* IE9+ */
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url('Montserrat-Light.otf'); /* IE9+ */
+}
+/*全局设定*/
+body,
+h2,
+h3,
+p {
+    margin: 0px;
+    padding: 0px;
+    
+}
+body {
+    min-width: 1600px;
+    font: 16px/28px Montserrat;
+}
+section {
+    text-align: center;
+}
+/*主体文字区域统一设定*/
+.m-body{
+    margin: 0 315px;
+}
+/*统一清除浮动*/
+.clearfix::after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0px;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+
+/*welcome部分规则*/
+#w-text {
+    position: absolute;
+    top: 211px;
+    min-width: 970px;
+    color: #fff;
+}
+#w-text h2 {
+    margin-bottom: 62px;
+    font: 62px/72px Montserrat;
+}
+#w-text > p {
+    margin: 0 102px 104px;
+    font: 20px/32px Montserrat;  
+}
+#w-text form {
+    border: 1px solid #5d5953;
+    border-radius: 4px;
+}
+#w-text form p {
+    margin: 61px 0 43px;
+    font: 16px/28px Montserrat-Light; 
+}
+#w-text form p span {
+    font: 12px "Myriad Pro",Montserrat-Light;
+    color: #9c9483;
+}
+#w-text input {
+    margin-bottom: 52px;
+    height: 50px;
+}
+#w-text [type="text"],
+#w-text [type="password"] {
+    margin-right: 30px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: 1px solid #5d5953;
+    width: 258px;
+    font: 14px Montserrat-Light;
+    color: #fff;
+    background: transparent;
+}
+#w-text [type="submit"] {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 125px;
+    font: 12px/22px Montserrat-Light;
+    background: #fff;
+    color: #000;
+}
+
+/*characteristic部分规则*/
+#characteristic h2 {
+    margin-top: 89px;
+    font: 14px/28px Montserrat-Light;
+}
+#characteristic > p {
+    margin: 25px 415px 86px;
+    font: bold 42px/52px Montserrat;
+}
+#characteristic div {
+    float: left;
+    width: 370px;
+    padding-left: 77px;
+    text-align: left;
+}
+#characteristic div h3 {
+    margin-bottom: 9px;
+    font: 20px/32px Montserrat-Light;  
+}
+#characteristic div p {
+    font: 16px/26px Montserrat; 
+}
+#characteristic div:nth-of-type(1) {
+    background: url(images/Iphone-Icon.png) 15px 6px no-repeat;
+    margin: 0 0 82px 292px;
+}
+#characteristic div:nth-of-type(2) {
+    background: url(images/Check-Icon.png) 9px 6px no-repeat;
+    margin: 0 0 82px 197px;
+
+}
+#characteristic div:nth-of-type(3) {
+    background: url(images/Pencil-Icon.png) left 6px no-repeat;
+    margin-left: 292px;
+}
+#characteristic div:nth-of-type(4) {
+    background: url(images/Settings-Icon.png) left 6px no-repeat;
+    margin: 0 0 116px 197px;
+}
+
+/*supportive部分*/
+#supportive {
+    padding:0 315px;
+    width: 970;
+    height: 800px;
+    text-align: left;
+    background: url(images/Background2.png) no-repeat;
+}
+#supportive h2,
+#supportive p {
+    color: #fff;
+    width: 400px;
+    
+}
+#supportive h2 {
+    padding: 182px 0 48px;
+    font: 42px/52px Montserrat;
+}
+#supportive p {
+    padding: 0px 0 57px;   
+    font: 18px/28px Montserrat;  
+}
+#supportive a {
+    display: inline-block;
+    padding: 25px 38px;
+    border: 1px solid #5d5953;
+    border-radius: 5px;
+    font: 12px Montserrat-Light;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+#supportive a:nth-of-type(1) {
+     margin: 0 30px 0 0;/*两个键之间加些距离*/
+}
+#supportive a:hover {
+    color: #000;
+    background: #fff;
+}
+
+/*information部分*/
+#information hr {
+    margin: 0;
+    border: 1px solid #d7d7d7; 
+    width: 100%;
+    background: #d7d7d7; 
+}
+#information h2 {
+    margin: 99px 0 88px;
+    font: 42px/52px Montserrat;
+}
+/*information第一部分*/
+#product{
+    display: flex;
+    padding:0 4px 0 16px;
+}
+#product p {
+    flex:1 auto;
+    padding: 76px 42px 106px;
+    font: 16px/26px Montserrat;  
+}
+#product p:nth-child(1) {
+    background: url(images/Singleton.png) center top no-repeat;
+}
+#product p:nth-child(2) {
+    background: url(images/Hero.png) center top no-repeat;
+}
+#product p:nth-child(3) {
+    background: url(images/Portland.png) center top no-repeat;
+}
+
+#study {
+    margin-right:310px;
+    padding: 116px 0 0;
+    text-align: left;
+}
+#study img:nth-of-type(1) {
+    float: left;
+    margin: 0 98px 79px 0;
+}
+#study img:nth-of-type(2) {
+    float: right;
+    margin: 0 0 104px 77px;
+}
+#study h3 {
+    padding: 76px 0 34px;
+    font: 20px/32px Montserrat-Light;
+}
+
+#crew {
+    margin-bottom: 100px;/*消除inline-block间的空隙*/
+    font:0/0 Montserrat-Light;
+}
+#crew > h2 {
+    margin-bottom: 37px;
+}
+#crew > p {
+    margin: 0 135px 106px;
+    font: 18px/28px Montserrat;     
+}
+#crew .crew-i {
+    position: relative;
+    display: inline-block;
+    width: 470px;
+    height: 340px;
+}
+#crew img,
+#crew .crew-i div {
+    position: absolute;
+    top: 0;
+    left:0;
+}
+#crew .crew-i:nth-of-type(1) {
+    margin: 0 15px 30px 0;
+}
+#crew .crew-i:nth-of-type(2) {
+    margin: 0 0 30px 15px;
+}
+#crew .crew-i:nth-of-type(3) {
+    margin-right: 15px;
+}
+#crew .crew-i:nth-of-type(4) {
+    margin-left: 15px;
+}
+#crew .crew-i div {
+    width: 470px;
+    height: 340px;
+    background: #66666694;
+}
+#crew .crew-i h3 {
+    margin: 109px 0 0 0;
+    font: 20px/32px Montserrat-Light;
+    color: #fff;
+
+}
+#crew .crew-i p {
+    margin-bottom:37px;
+    font: 12px/28px Montserrat-Light;
+    color: #d8d6d6;
+}
+#crew div .face {
+    display: inline-block;
+    width: 51px;
+    height: 54px;
+    background: url(images/Facebook-Icon0.png) no-repeat center center;
+}
+#crew div .t {
+    display: inline-block;
+    margin:0 30px;
+    width: 51px;
+    height: 54px;
+    background: url(images/Twitter-Icon0.png) no-repeat center center;
+}
+#crew div .m {
+    display: inline-block;
+    width: 51px;
+    height: 54px;
+    background: url(images/Instagram-Icon.png) no-repeat center center;
+}
+/*实现hover逻辑，没有hover时img在前，hover时img的z-index变低，显示div面板，此时移动鼠标hover在div上，使div：hover的z-index升高来保持其在img前面，当鼠标离开div面板，img升高，div回落，恢复原来状态*/
+#crew img {
+    z-index: 1;
+}
+#crew img:hover {
+    z-index: -5;
+    cursor: pointer;
+}
+#crew .crew-i div:hover {
+    z-index: 5;
+}
+
+/*contant部分规则*/
+#contact form {
+    float: left;
+    margin: 70px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+#contact form p {
+    margin: 51px 120px 17px;
+    text-transform: uppercase;
+    font: 16px/26px Montserrat-Light;
+    color: #000;
+}
+#contact form input,
+#contact form textarea {
+    display: block;
+    margin: 30px 51px;
+    padding:0 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 350px;
+    height: 50px;
+    font: 14px Montserrat-Light; 
+    color: #9c9483;
+}
+#contact form [name="message"] {
+    padding-top:10px;
+    height: 134px;
+    resize: none;
+}
+#contact [type="submit"] {
+    border: none;
+    width: 370px;
+    text-transform: uppercase;
+    background: #000;
+    color: #fff; 
+}
+#contact [type=submit]:hover {
+    cursor: pointer;
+}
+#contact div{
+    float:right;
+    margin-right:7px;
+    width:363px;
+    text-align: left;
+}
+#contact div h2 {
+    margin: 158px 0 38px;
+}
+#contact div  p {
+    font: 16px/26px Montserrat;
+}
+#contact ul {
+    margin-top: 71px;
+    padding-left: 0;
+    list-style: none;
+    font-family: Montserrat-Light;
+    color: #141414;
+}
+#contact ul li {
+    padding: 0 0 36px 45px ;
+}
+#contact ul li:nth-child(1) {
+    background: url(images/Map-Icon.png) 3px 6px no-repeat;
+}
+#contact ul li:nth-child(2) {
+    background: url(images/Phone-Icon.png) left 6px no-repeat;
+}
+#contact ul li:nth-child(3) {
+    background: url(images/Mail-Icon.png) left 6px no-repeat;
+}
+
+
+#more {
+    background: #141414;
+    text-align: left;   
+}
+#more table {
+    padding: 88px 0 134px 215px;
+    table-layout: fixed;
+}
+#more tr * {
+    padding-bottom: 32px;
+    width: 300px;
+}
+#more a{
+    text-decoration: none;
+}
+#more th a {
+    color: #fff;
+    font: 14px/28px Montserrat-Light;
+}
+#more td a {
+    color: #838383;
+    font: 18px/28px Montserrat-Light;
+}
+#more table tr:nth-child(2) td:nth-child(4) {
+    vertical-align: top;
+}
+#more td .icon {
+    display: inline-block;
+    width: 24px;
+    height: 15px;
+    margin-right: 18px;
+}
+#more td .icon:nth-child(2) {
+    background: url(images/Twitter-Icon.png) center center no-repeat; 
+}
+#more td .icon:nth-child(3) {
+    background: url(images/Facebook-Icon.png) center center no-repeat; 
+}
+#more td .icon:nth-child(4) {
+    background: url(images/Google-Icon.png) center center no-repeat; 
+}
+#more td .icon:nth-child(5) {
+    background: url(images/Tumbler-Icon.png) center center no-repeat; 
+}
+#more td .icon:nth-child(6) {
+    background: url(images/Pinterest-Icon.png) center center no-repeat; 
+}
+#more td .icon:nth-child(7) {
+    background: url(images/LinkedIn-Icon.png) center center no-repeat; 
+}
