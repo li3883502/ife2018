@@ -1,7 +1,7 @@
 //添加编辑字样
 tableWarpper.addEventListener("mouseover",function(evt){
   var target=evt.target;
-  if(target.nodeName.toLowerCase()==='td'){
+  if(target.nodeName.toLowerCase()==='td'&&Number(target.innerHTML)){
       var p=document.createElement('p');
       p.innerHTML="编辑";
       p.setAttribute('class','pencil');
@@ -25,7 +25,7 @@ body.addEventListener("click",function(evt){
     var target=evt.target;
     
    
-    if(target.nodeName.toLowerCase()==='td'){
+    if(target.nodeName.toLowerCase()==='td'&&Number(target.innerHTML)){
         var div=document.createElement('div');
         var btnEn=document.createElement('button');
         var btnEs=document.createElement('button');
