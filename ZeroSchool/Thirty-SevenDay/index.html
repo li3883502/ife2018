@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='CN-zh'>
+    <head>
+        <meta charset="UTF-8">
+        <title>第三十一到第三十三天：我是精明的小卖家（一）</title>
+        <link rel="stylesheet" href="misstyle.css" type="text/css">
+        <style>
+        table{
+            text-align:center;
+          }
+          td,th{
+            padding:2px 5px;
+          }</style>
+          
+    </head>
+    <body>
+        <form active="" method="GET">
+            <fieldset id="region-radio-wrapper">
+              <legend>地区</legend>
+              <label><input type="checkbox" value="全选">全选</label>
+              <hr>
+              <label><input type="checkbox" name="region" value="华东" checked>华东</label>
+              <label><input type="checkbox" name="region" value="华北">华北</label> 
+              <label><input type="checkbox" name="region" value="华南">华南</label>
+            </fieldset>
+            <br>
+            <fieldset id="product-radio-wrapper">
+              <legend>产品</legend>
+              <label><input type="checkbox" value="全选">全选</label>
+              <hr>
+              <label><input type="checkbox" name="product" value="手机" checked>手机</label>
+              <label><input type="checkbox" name="product" value="笔记本">笔记本</label>
+              <label><input type="checkbox" name="product" value="智能音箱">智能音箱</label>
+            </fieldset>
+          </form>
+          <canvas id="canvas" width="500" height="300" >
+          </canvas>
+          <svg width="500" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            </g>
+          </svg>
+          <div id="table-wrapper">
+          </div>
+          <button type="button">保存</button>
+          <script src="data.js"></script>
+          <script src="checkall.js"></script>
+          <script src="table.js"></script>
+          <script src="line.js"></script>
+          <script src="edit.js"></script>
+          <script src="app.js"></script>
+    </body>
+</html>
