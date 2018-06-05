@@ -49,6 +49,9 @@ btn.onclick=function(){
   console.log(td);
   for(let i=0,k=2;i<temp.length;i++){
     for(let j=0;j<temp[i].sale.length;j++,k++){
+     if(k%13===0){
+        k=2;
+      }
       temp[i].sale[j]=td[k].innerHTML;
     }
   }
