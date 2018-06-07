@@ -105,7 +105,7 @@ var sourceData = [{
     
     //数据取出
     function getLsData(){
-        var storage=window.localStorage;
+        var storage=localStorage;
         var isourceData=[];
         if(storage[0]!==null){
             for(let x=0;x<sourceData.length;x++){
