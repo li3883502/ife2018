@@ -107,7 +107,7 @@ var sourceData = [{
         var storage=window.localStorage;
         var isourceData=[];
         console.log(storage);
-        if(storage){
+        if(storage!==null){
             for(let x=0;x<sourceData.length;x++){
                 isourceData[x]=JSON.parse(storage.getItem('lssourceData'+x));
             }
