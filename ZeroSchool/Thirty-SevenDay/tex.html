@@ -1,0 +1,14 @@
+<script>
+   
+        var storage=window.localStorage;
+        var isourceData=[];
+        if(storage){
+            for(let x=0;x<sourceData.length;x++){
+                isourceData[x]=JSON.parse(storage.getItem('lssourceData'+x));
+            }
+            return isourceData;
+        }else{
+            return sourceData;
+        }
+
+</script>
