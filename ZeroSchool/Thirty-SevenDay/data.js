@@ -54,7 +54,6 @@ var sourceData = [{
       var isourceData=getLsData();
       conpareStr+=checkedValue(regionSelect);
       conpareStr+=checkedValue(elcpdSelect);
-      console.log(isourceData);
       for(let i=0,j=0;i<isourceData.length;i++ ){
       if(conpareStr.indexOf(isourceData[i].region)!==-1&&conpareStr.indexOf(isourceData[i].product)!==-1){
           list[j++]=isourceData[i];
@@ -112,7 +111,6 @@ var sourceData = [{
     function getLsData(){
         var storage=window.localStorage;
         var isourceData=[];
-        console.log(storage);
         if(storage){
             for(let x=0;x<sourceData.length;x++){
                 isourceData[x]=JSON.parse(storage.getItem('lssourceData'+x));
