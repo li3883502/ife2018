@@ -54,6 +54,7 @@ var sourceData = [{
       var isourceData=getLsData();
       conpareStr+=checkedValue(regionSelect);
       conpareStr+=checkedValue(elcpdSelect);
+      
       for(let i=0,j=0;i<isourceData.length;i++ ){
       if(conpareStr.indexOf(isourceData[i].region)!==-1&&conpareStr.indexOf(isourceData[i].product)!==-1){
           list[j++]=isourceData[i];
