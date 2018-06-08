@@ -21,7 +21,7 @@ function getSeach(){
 function render(){
     var content=getSeach();
     if(content[0]===''){
-        regionSelector[0].checked=true;
+        regionSelect[0].checked=true;
     }else{
     for(let i=0;i<regionSelect.length;i++){
         if(content[0].indexOf(regionSelect[i].value)!==-1){
